@@ -1,0 +1,9 @@
+node_modules/
+contracts/artifacts/
+contracts/interface/artifacts/
+.openzeppelin/
+.deploys/
+build/
+src/*/*.js
+src/*.js
+yarn-error.log

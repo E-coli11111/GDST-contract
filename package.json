@@ -4,6 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
+    "@ledgerhq/hw-app-eth": "^6.33.3",
+    "@ledgerhq/hw-transport-node-hid": "^6.27.14",
+    "@ledgerhq/types-cryptoassets": "^7.2.0",
     "@openzeppelin/contracts-upgradeable": "^4.8.1",
     "ethereumjs-wallet": "^1.0.2",
     "ethers": "5.7.0"

@@ -191,7 +191,7 @@ contract GDST is Initializable, ERC20Upgradeable, OwnableUpgradeable, UUPSUpgrad
      * @param account The account to freeze/unfreeze
      * @param freeze The freeze status to be set
      */
-    function freezeAccount(address account, bool freeze) external onlyOwner{
+    function freezeAccount(address account, bool freeze) external onlyAdmin{
         _freezeAccount(account, freeze);
     }
 

@@ -3,7 +3,7 @@ import { utils } from "ethers";
 import { JsonRpcProvider } from "@ethersproject/providers";
 
 const provider = new JsonRpcProvider();
-const sk = "1cccbfee70391607dc222d327be27a94f911b39b9ae4264e89fecd6038fb65c5";
+const sk = "";
 const wallet = new ethers.Wallet(sk, provider);
 const file = "this is a file";
 const filehash = utils.arrayify(utils.hashMessage(file));

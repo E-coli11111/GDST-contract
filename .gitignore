@@ -4,6 +4,9 @@ contracts/interface/artifacts/
 .openzeppelin/
 .deploys/
 build/
+python/
 src/*/*.js
 src/*.js
+src/event
+src/transaction
 yarn-error.log

@@ -92,7 +92,7 @@ contract Admin {
         require(files[fileHash].collected.length >= files[fileHash].minSigner, "Admin::Not enough signer");
         require(files[fileHash].operation == Operations.Mint, "Admin::Wrong file type");
         require(files[fileHash].amount >= amount, "Admin::Mint amount exceed specified amount");
-        _GDST.increaseSupply(to, amount);
+        _GDST.increaseSupply(amount, to);
         files[fileHash].amount -= amount;
     }
 
@@ -101,7 +101,7 @@ contract Admin {
         require(files[fileHash].collected.length >= files[fileHash].minSigner, "Admin::Not enough signer");
         require(files[fileHash].operation == Operations.Burn, "Admin::Wrong file type");
         require(files[fileHash].amount >= amount, "Admin::Mint amount exceed specified amount");
-        _GDST.decreaseSupply(from, amount);
+        _GDST.decreaseSupply(amount, from);
         files[fileHash].amount -= amount;
     }
 

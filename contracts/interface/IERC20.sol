@@ -75,5 +75,6 @@ interface IERC20Mintable {
      * Emits a {Transfer} event.
      */
     function transferFrom(address from, address to, uint256 amount) external returns (bool);
-    function mint(address to, uint256 amount) external;
+    function increaseSupply(uint value, address from) external returns (bool);
+    function decreaseSupply(uint value, address to) external returns (bool);
 }
